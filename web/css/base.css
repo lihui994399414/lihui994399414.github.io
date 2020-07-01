@@ -18,7 +18,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 }
 /* 要注意表单元素并不继承父级 font 的问题 */
 body,button,input,select,textarea {
-    font:12px "Microsoft YaHei";
+    font-size:12px;
+    font-family: "Microsoft YaHei","Heiti SC",PingFang-SC-Medium,PingFang SC, Helvetica Neue, Arial, sans-serif;
     color:#000;
 }
 input,select,textarea {
