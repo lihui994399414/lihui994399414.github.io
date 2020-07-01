@@ -55,27 +55,23 @@
         </div>
         <div class="hb-icon">
             <img src="./images/home_menu_icon_nor.png" alt="">
-        </div>        
-    </div>
-    <section id="header" style="display: none;">
-        <div class="container nav">
-            <div class="menu-brand">
-                <a href="#">
-                    <img src="./images/logo.png" alt="">
-                </a>
-            </div>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li><a href="javascript:;" data-id="banner">首页</a></li>
-                    <li><a href="javascript:;" data-id="features">核心功能</a></li>
-                    <li><a href="javascript:;" data-id="client">受众客户</a></li>
-                    <li><a href="javascript:;" data-id="show">功能展示</a></li>
-                    <li><a href="javascript:;" data-id="purpose">服务宗旨</a></li>
-                    <li><a href="javascript:;" data-id="footer">联系我们</a></li>
-                </ul>
-            </div>
         </div>
-    </section>
+        <section id="header" style="display: none;">
+            <div class="nav">
+                <div class="menu-cnt">
+                    <ul id="main-menu">
+                        <li><a href="javascript:;" data-id="banner" class="active">首页</a></li>
+                        <li><a href="javascript:;" data-id="features">核心功能</a></li>
+                        <li><a href="javascript:;" data-id="client">受众客户</a></li>
+                        <li><a href="javascript:;" data-id="show">功能展示</a></li>
+                        <li><a href="javascript:;" data-id="purpose">服务宗旨</a></li>
+                        <li><a href="javascript:;" data-id="footer">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <div class="container banner">
         <div class="banner-left" data-scroll-reveal="enter right and move 50px over 1.33s">
             <p>
@@ -133,7 +129,7 @@
         </div>
         <div class="part1-item" >
             <div class="part1-item-top">
-                <img src="./images/home_transaction_img_nor.png" alt="">
+                <img src="./images/home_money_img_nor.png" alt="">
             </div>
             <div class="part1-item-btm">
                 <div class="pib-title">
@@ -418,19 +414,25 @@
 <script>
     window.scrollReveal = new scrollReveal();
     $(function(){
+        let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
         window.addEventListener('scroll', function(){
-            let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
-            if(t>50){
-                $('#header').addClass('header-active')
+            t = $('body, html').scrollTop()
+            if(t>100){
+                $(".hb-logo img").attr("src","./images/home_logo_black_img_nor.png");
+                $(".hb-icon img").attr("src","./images/home_menu_black_icon_nor.png");
+                $('.header-banner').addClass('header-active')
             }else{
-                $('#header').removeClass('header-active')
+                $('.header-banner').removeClass('header-active');
+                $(".hb-logo img").attr("src","./images/home_logo_img_nor.png");
+                $(".hb-icon img").attr("src","./images/home_menu_icon_nor.png");
             }
         })
         $("#main-menu li a").on("click",function(){
             $("#main-menu li a").removeClass('active');
             $(this).addClass('active');
             var navIndex = $(this).attr("data-id");
-            console.log(navIndex);
+            $("#header").slideUp(200);
+            $(".hb-icon").removeClass("active")
             $("html, body").animate({
                 scrollTop: $('#'+navIndex).offset().top - 63}, {duration: 1000,easing: "swing"
             });
@@ -440,8 +442,29 @@
                 scrollTop: $('#footer').offset().top - 63}, {duration: 1000,easing: "swing"
             });
         })
-
-
+        $(".hb-icon").on("click",function(){
+            if(t > 100){
+                if ($(this).hasClass('active')) {
+                    $("#header").slideUp(200);
+                    $(".hb-icon img").attr("src","./images/home_menu_black_icon_nor.png");
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                    $("#header").slideDown(200);
+                    $(".hb-icon img").attr("src","./images/home_close_icon_nor.png");
+                }
+            }else{
+                if ($(this).hasClass('active')) {
+                    $("#header").slideUp(200);
+                    $(".hb-icon img").attr("src","./images/home_menu_icon_nor.png");
+                    $(this).removeClass('active');
+                } else {
+                    $(this).addClass('active');
+                    $("#header").slideDown(200);
+                    $(".hb-icon img").attr("src","./images/home_close_white_icon_nor.png");
+                }
+            }
+        })
     })
 </script>
 </body>
