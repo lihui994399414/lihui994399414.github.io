@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BITMEN</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script>
+        ! function(e) {
+            function t(a) {
+                if (i[a]) return i[a].exports;
+                var n = i[a] = {
+                    exports: {},
+                    id: a,
+                    loaded: !1
+                };
+                return e[a].call(n.exports, n, n.exports, t), n.loaded = !0, n.exports
+            }
+            var i = {};
+            return t.m = e, t.c = i, t.p = "", t(0)
+        }([function(e, t) {
+            "use strict";
+            Object.defineProperty(t, "__esModule", {
+                value: !0
+            });
+            var i = window;
+            t["default"] = i.flex = function(e, t) {
+                var a = e || 100,
+                    n = t || 1,
+                    r = i.document,
+                    o = navigator.userAgent,
+                    d = o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),
+                    l = o.match(/U3\/((\d+|\.){5,})/i),
+                    c = l && parseInt(l[1].split(".").join(""), 10) >= 80,
+                    p = navigator.appVersion.match(/(iphone|ipad|ipod)/gi),
+                    s = i.devicePixelRatio || 1;
+                p || d && d[1] > 534 || c || (s = 1);
+                var u = 1 / s,
+                    m = r.querySelector('meta[name="viewport"]');
+                m || (m = r.createElement("meta"), m.setAttribute("name", "viewport"), r.head.appendChild(m)), m.setAttribute("content", "width=device-width,user-scalable=no,initial-scale=" + u + ",maximum-scale=" + u + ",minimum-scale=" + u), r.documentElement.style.fontSize = a / 2 * s * n + "px"
+            }, e.exports = t["default"]
+        }]);
+        flex(100, 1);
+    </script>
+</head>
+<body>
+<section id="banner">
+    <div class="header-banner">
+        <div class="hb-logo">
+            <img src="./images/home_logo_img_nor.png" alt="">
+        </div>
+        <div class="hb-icon">
+            <img src="./images/home_menu_icon_nor.png" alt="">
+        </div>        
+    </div>
+    <section id="header" style="display: none;">
+        <div class="container nav">
+            <div class="menu-brand">
+                <a href="#">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li><a href="javascript:;" data-id="banner">首页</a></li>
+                    <li><a href="javascript:;" data-id="features">核心功能</a></li>
+                    <li><a href="javascript:;" data-id="client">受众客户</a></li>
+                    <li><a href="javascript:;" data-id="show">功能展示</a></li>
+                    <li><a href="javascript:;" data-id="purpose">服务宗旨</a></li>
+                    <li><a href="javascript:;" data-id="footer">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="container banner">
+        <div class="banner-left" data-scroll-reveal="enter right and move 50px over 1.33s">
+            <p>
+                BITMEN <br>
+                <span>自动化</span>做市系统<br>
+                让做市更加高效便捷
+            </p>
+        </div>
+        <div class="banner-right" data-scroll-reveal="enter right and move 50px over 1.33s">
+            <div class="br-top">
+                <div class="br-top-item">
+                    <div class="line"></div>
+                    <div class="bti-text">项目方</div>
+                    <div class="bti-num">150+</div>
+                </div>
+                <div class="br-top-item">
+                    <div class="line"></div>
+                    <div class="bti-text">交易对</div>
+                    <div class="bti-num">425+</div>
+                </div>
+                <div class="br-top-item">
+                    <div class="line"></div>
+                    <div class="bti-text">交易所</div>
+                    <div class="bti-num">19+</div>
+                </div>
+
+            </div>
+            <div class="br-center">
+                <p>BitMen自动化做市系统，专注于虚拟币交易做市， 一站式为您提供自动化做市服务。帮您解决交易深度不足、多交易所行情不一致、K线杂乱无章等诸多问题， BitMen多种强大辅助功能，一键即可为您解决烦恼！ 做市小白轻松上手，省人省钱更有效 ！</p>
+            </div>
+            <div class="br-btm">
+                <a href="javascript:;" id="linkUs">联系我们</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<section id="part1" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="part1-box container">
+        <div class="part1-item" >
+            <div class="part1-item-top">
+                <img src="./images/home_quotation_img_nor.png" alt="">
+            </div>
+            <div class="part1-item-btm">
+                <div class="pib-title">
+                    行情走势随心设定
+                </div>
+                <div class="pib-text">
+                    行情走势自由设定 <br>
+                    千套经典K线方案灵活<br>
+                    选择，随用随换<br>
+                </div>
+            </div>
+        </div>
+        <div class="part1-item" >
+            <div class="part1-item-top">
+                <img src="./images/home_transaction_img_nor.png" alt="">
+            </div>
+            <div class="part1-item-btm">
+                <div class="pib-title">
+                    自动挂单自动成交
+                </div>
+                <div class="pib-text">
+                    做市交易一键挂单 <br>
+                    交易频次、铺单档位及铺<br>
+                    单量自由调节<br>
+                </div>
+            </div>
+        </div>
+        <div class="part1-item" >
+            <div class="part1-item-top">
+                <img src="./images/home_transaction_img_nor.png" alt="">
+            </div>
+            <div class="part1-item-btm">
+                <div class="pib-title">
+                    交易情况实时跟踪
+                </div>
+                <div class="pib-text">
+                    实时盘口、交易数据和资产情况
+                    实时跟踪，配合每日资产报表，
+                    让您掌控乾坤
+                </div>
+            </div>
+        </div>
+        <div class="part1-item" >
+            <div class="part1-item-top">
+                <img src="./images/home_alert_img_nor.png" alt="">
+            </div>
+            <div class="part1-item-btm">
+                <div class="pib-title">
+                    买卖异动自动报警
+                </div>
+                <div class="pib-text">
+                    市场异动及时提醒<br>
+                    四大预警功能及时判断走向，
+                    自动采取应急措施
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--产品介绍-->
+<section id="product">
+    <div class="container product-box">
+        <div class="product-right" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+            <div class="bit-left-title product-title">
+                <h1>产品介绍</h1>
+                <h2>BITMEN自动化做市系统</h2>
+            </div>
+            <div class="product-desc">
+                BITMEN是一套基于AI辅助，交易自动划线的数字货币做市系统，具有自动化交易、一键挂单、盘口规避等实用功能。
+            </div>
+        </div>
+        <div class="product-left" data-scroll-reveal="enter left and move 50px over 1.33s">
+            <img src="./images/home_illustration_img_nor.png" alt="">
+        </div>
+    </div>
+</section>
+<!--产品核心功能介绍-->
+<section id="features" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="container product-box">
+        <div class="product-right">
+            <div class="bit-left-title features-title">
+                <h1>产品核心功能介绍</h1>
+                <h2>BITMEN六大核心功能</h2>
+            </div>
+            <div class="product-desc">
+                BITMEN是一套基于AI辅助，交易自动划线的数字货币做市系统，具有自动化交易、一键挂单、盘口规避等实用功能。
+            </div>
+        </div>
+        <div class="features-right">
+            <div class="features-right-row">
+                <div class="frr-item">
+                    <h3>行情预设</h3>
+                    <p>数百套经典K线方案，模拟各种走势，并可随时切换，方便快捷</p>
+                </div>
+                <div class="frr-item">
+                    <h3>人工画线</h3>
+                    <p>满足专业需求，通过人工画线，走出需要的独立行情</p>
+                </div>
+            </div>
+            <div class="features-right-row">
+                <div class="frr-item">
+                    <h3>走势跟随</h3>
+                    <p>锚定目标币对，进行价格或走势的跟随，使用方便且安全可靠</p>
+                </div>
+                <div class="frr-item">
+                    <h3>辅助功能</h3>
+                    <p>内置自动闪单、大单规避、防套利等模式，灵活应对盘口走向</p>
+                </div>
+            </div>
+            <div class="features-right-row">
+                <div class="frr-item">
+                    <h3>实时预警</h3>
+                    <p>市场异动及时提醒，四大预警功能及时判断走向，自动采取应急措施</p>
+                </div>
+                <div class="frr-item">
+                    <h3>资产监控</h3>
+                    <p>实时盘口、交易及资产状况跟踪，配合每日资产报表，让您掌控乾坤</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--受众客户-->
+<section id="client" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="container">
+        <div class="bit-title title-white client-title">
+            <h1>受众客户</h1>
+            <h2>我们为谁服务？</h2>
+        </div>
+        <div class="client-wrap">
+            <div class="client-wrap-item">
+                <div class="cwi-icon">
+                    <img src="./images/client_icon1.png" alt="">
+                </div>
+                <div class="cwi-title">做市商</div>
+                <div class="cwi-text">协助您更好的为您的项目方服务</div>
+            </div>
+            <div class="client-wrap-item">
+                <div class="cwi-icon">
+                    <img src="./images/client_icon2.png" alt="">
+                </div>
+                <div class="cwi-title">交易所</div>
+                <div class="cwi-text">支持API接入，上币及做市服务一体化</div>
+            </div>
+            <div class="client-wrap-item">
+                <div class="cwi-icon">
+                    <img src="./images/client_icon3.png" alt="">
+                </div>
+                <div class="cwi-title">项目方</div>
+                <div class="cwi-text">自动化做市，降低项目做市成本</div>
+            </div>
+            <div class="client-wrap-item">
+                <div class="cwi-icon">
+                    <img src="./images/client_icon4.png" alt="">
+                </div>
+                <div class="cwi-title">孵化机构</div>
+                <div class="cwi-text">提高您的服务品质，彰显服务质量</div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--功能展示-->
+<section id="show" class="show" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="container product-box">
+        <div class="product-right">
+            <div class="bit-left-title features-title">
+                <h1>功能展示</h1>
+                <h2>自动交易机器人</h2>
+            </div>
+            <div class="product-desc">
+                基于K线方案，实现7*24不间断做市，让市场具有良好的流动性，优良的盘口活跃度和买卖深度，并利用规避、预警、防套利等多种逻辑降低做市成本。
+            </div>
+            <div class="show-btn">
+                <a href="javascript:;">联系我们</a>
+            </div>
+        </div>
+        <div class="show-box">
+            <div class="product-left showone">
+                <div class="showone-box1">
+                    <img class="showone-active" src="./images/box-1-ui-1.png" alt="" style="width:4.3rem;">
+                    <img class="showone-shadow" src="./images/box-3-shadow.png" alt="" style="width:4.4rem;">
+                </div>
+                <div class="showone-box2">
+                    <img class="showone-box2-active" src="./images/box-1-ui-2.png" alt="" style="width:4.3rem;">
+                    <img class="showone-box2-shadow" src="./images/box-3-shadow-2.png" alt="" style="width:4.4rem;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="show" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="container product-box show-box">
+        <div class="product-right">
+            <div class="bit-left-title features-title">
+                <h1>功能展示</h1>
+                <h2>自动跟随机器人</h2>
+            </div>
+            <div class="product-desc">
+                提供流动性，复制各大交易所或目标币对的买卖深度和K线走势，为用户构建真实的交易环境，并利用智能机器人的策略降低做市成本。
+            </div>
+            <div class="show-btn">
+                <a href="javascript:;">联系我们</a>
+            </div>
+        </div>
+        <div class="product-left showtwo">
+            <div class="showtwo-box1">
+                <img class="showtwo-active" src="./images/box-2-ui-1-1.png" alt="" style="width:4.3rem;">
+                <img class="showtwo-shadow" src="./images/box-3-shadow-2.png" alt="" style="width:4.4rem;">
+            </div>
+            <div class="showtwo-box2">
+                <img class="showtwo-box2-active" src="./images/phone.png" alt="" style="width:2.3rem;">
+                <img class="showtwo-box2-shadow" src="./images/box-2-shadow.png" alt="" style="width:2.4rem;">
+            </div>
+        </div>
+    </div>
+</section>
+<!--服务宗旨-->
+<section id="purpose" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="bit-title purpose-title">
+        <h1>服务宗旨</h1>
+        <h2>我们的服务宗旨</h2>
+    </div>
+    <div class="container">
+        <div class="purpose-steps">
+            <div class="step-item">
+                <span>1</span>
+                <div class="content">
+                    <h3>为您省时</h3>
+                    <div class="step-text">
+                        <p>
+                            AI机器人辅助，<br>
+                            为客户快速制定方案。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-item">
+                <span>2</span>
+                <div class="content">
+                    <h3>为您省钱</h3>
+                    <div class="step-text">
+                        <p>
+                            全系统化操作，<br>
+                            为客户节约人力物力。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-item">
+                <span>3</span>
+                <div class="content" style="margin-bottom:0;">
+                    <h3>让您高效</h3>
+                    <div class="step-text">
+                        <p>
+                            一键多处联动，<br>
+                            为客户高效达到目的
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer-->
+<section id="footer" data-scroll-reveal="enter bottom and move 50px over 1.33s">
+    <div class="container">
+        <div class="footer-box">
+            <div class="footer-left">
+                <!--<img src="./images/home_contact.png" alt="">-->
+                <h3>联系我们</h3>
+            </div>
+            <div class="footer-right">
+                <div class="f-r-left">
+                    <div class="f-r-left-item">
+                        <img src="./images/home_phone_icon_nor.png" alt="" class="footer-icon">
+                        <p>手机: 138-0000-0000 梁经理</p>
+                    </div>
+                    <div class="f-r-left-item">
+                        <img src="./images/home_emai_icon_nor.png" alt="" class="footer-icon">
+                        <p>邮箱: lb@bitmen.com 梁经理</p>
+                    </div>
+                    <div class="f-r-left-item">
+                        <img src="./images/home_address_icon_nor.png" alt="" class="footer-icon">
+                        <p>联系地址: 北京北四环金泉大厦A座808</p>
+                    </div>
+                </div>
+            </div>
+            <div class="f-r-right">
+                <img src="./images/home_wechat_img_nor.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/scrollReveal.js"></script>
+<script>
+    window.scrollReveal = new scrollReveal();
+    $(function(){
+        window.addEventListener('scroll', function(){
+            let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
+            if(t>50){
+                $('#header').addClass('header-active')
+            }else{
+                $('#header').removeClass('header-active')
+            }
+        })
+        $("#main-menu li a").on("click",function(){
+            $("#main-menu li a").removeClass('active');
+            $(this).addClass('active');
+            var navIndex = $(this).attr("data-id");
+            console.log(navIndex);
+            $("html, body").animate({
+                scrollTop: $('#'+navIndex).offset().top - 63}, {duration: 1000,easing: "swing"
+            });
+        });
+        $("#linkUs").on("click",function(){
+            $("html, body").animate({
+                scrollTop: $('#footer').offset().top - 63}, {duration: 1000,easing: "swing"
+            });
+        })
+
+
+    })
+</script>
+</body>
+</html>
