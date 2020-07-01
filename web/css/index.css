@@ -324,27 +324,29 @@
     width:100%;
 }
 .features-right{
-    padding-left:90px;
     height:380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width:404px;
+    width:460px;
 }
 .frr-item h3{
-    font-size:26px;
+    font-size:20px;
     color:#06bfcb;
 }
 .frr-item p{
-    font-size:18px;
-    margin-top:20px;
+    font-size:16px;
+    line-height:28px;
+    margin-top:15px;
 }
 .features-right-row{
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 .frr-item{
-    width:50%;
+    width:45%;
 }
 
 /*product END*/
@@ -384,8 +386,12 @@
     -webkit-line-clamp:2;
     overflow: hidden;
 }
+.client-wrap-item:hover .cwi-icon img{
+    transform: scale(1.2);
+}
 .cwi-icon img{
     width:80%;
+    transition: all 0.5s;
 }
 /*client  END*/
 /*show BEGIN*/

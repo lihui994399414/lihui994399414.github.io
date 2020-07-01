@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>bitmen</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-
-
 <section id="banner">
     <section id="header">
         <div class="container nav">
@@ -20,7 +24,7 @@
             <div class="menu-cnt">
                 <ul id="main-menu">
                     <li><a href="javascript:;" data-id="banner">首页</a></li>
-                    <li><a href="javascript:;" data-id="product">核心功能</a></li>
+                    <li><a href="javascript:;" data-id="features">核心功能</a></li>
                     <li><a href="javascript:;" data-id="client">受众客户</a></li>
                     <li><a href="javascript:;" data-id="show">功能展示</a></li>
                     <li><a href="javascript:;" data-id="purpose">服务宗旨</a></li>
@@ -30,14 +34,14 @@
         </div>
     </section>
     <div class="banner-container">
-        <div class="banner-left">
+        <div class="banner-left" data-scroll-reveal="enter right and move 50px over 1.33s">
             <p>
                 BITMEN <br>
                 <span>自动化</span>做市系统<br>
                 让做市更加高效便捷
             </p>
         </div>
-        <div class="banner-right">
+        <div class="banner-right" data-scroll-reveal="enter right and move 50px over 1.33s">
             <div class="br-top">
                 <div class="br-top-item">
                     <div class="line"></div>
@@ -57,13 +61,10 @@
 
             </div>
             <div class="br-center">
-                <p>BitMen自动化做市系统，专注于活跃虚拟币交易做市！
-                    交易深度不够、多交易所行情不一致、K线杂乱无章？
-                    BitMen多种强大功能辅助，一站式为您解决烦恼！
-                    电脑小白也能分分钟上手，省人省钱更有效 ！</p>
+                <p>BitMen自动化做市系统，专注于虚拟币交易做市， 一站式为您提供自动化做市服务。帮您解决交易深度不足、多交易所行情不一致、K线杂乱无章等诸多问题， BitMen多种强大辅助功能，一键即可为您解决烦恼！ 做市小白轻松上手，省人省钱更有效 ！</p>
             </div>
             <div class="br-btm">
-                <a href="javascript:;">联系我们</a>
+                <a href="javascript:;" id="linkUs">联系我们</a>
             </div>
 
         </div>
@@ -71,10 +72,9 @@
     </div>
 
 </section>
-
-<section id="part1">
+<section id="part1" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="part1-box container">
-        <div class="part1-item">
+        <div class="part1-item" >
             <div class="part1-item-top">
                 <img src="./images/part1-icon4.png" alt="">
             </div>
@@ -84,12 +84,12 @@
                 </div>
                 <div class="pib-text">
                     行情走势自由设定 <br>
-                    几百套K线走势方案灵活<br>
-                    选择，随势而换<br>
+                    千套经典K线方案灵活<br>
+                    选择，随用随换<br>
                 </div>
             </div>
         </div>
-        <div class="part1-item">
+        <div class="part1-item" >
             <div class="part1-item-top">
                 <img src="./images/part1-icon3.png" alt="">
             </div>
@@ -98,28 +98,28 @@
                     自动挂单自动成交
                 </div>
                 <div class="pib-text">
-                    做市交易一键铺单 <br>
-                    八档铺单，交易频率和铺单量<br>
+                    做市交易一键挂单 <br>
+                    交易频次、铺单档位及铺单量<br>
                     自由调节<br>
                 </div>
             </div>
         </div>
-        <div class="part1-item">
+        <div class="part1-item" >
             <div class="part1-item-top">
                 <img src="./images/part1-icon2.png" alt="">
             </div>
             <div class="part1-item-btm">
                 <div class="pib-title">
-                    实时跟踪交易情况
+                    交易情况实时跟踪
                 </div>
                 <div class="pib-text">
-                    实时盘口、交易和筹码跟踪<br>
-                    配合每日资产报表，<br>
+                    实时盘口、交易数据和资产情况<br>
+                    实时跟踪，配合每日资产报表，<br>
                     让您掌控乾坤<br>
                 </div>
             </div>
         </div>
-        <div class="part1-item">
+        <div class="part1-item" >
             <div class="part1-item-top">
                 <img src="./images/part1-icon1.png" alt="">
             </div>
@@ -139,25 +139,22 @@
 <!--产品介绍-->
 <section id="product">
     <div class="container product-box">
-        <div class="product-left">
+        <div class="product-left" data-scroll-reveal="enter left and move 50px over 1.33s">
             <img src="./images/product.png" alt="">
         </div>
-        <div class="product-right">
+        <div class="product-right" data-scroll-reveal="enter bottom and move 50px over 1.33s">
             <div class="bit-left-title product-title">
                 <h1>产品介绍</h1>
                 <h2>BITMEN自动化做市系统</h2>
             </div>
             <div class="product-desc">
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
+                BITMEN是一套基于AI辅助，交易自动划线的数字货币做市系统，具有自动化交易、一键挂单、盘口规避等实用功能。
             </div>
         </div>
     </div>
 </section>
 <!--产品核心功能介绍-->
-<section id="features">
+<section id="features" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="container product-box">
         <div class="product-right">
             <div class="bit-left-title features-title">
@@ -165,47 +162,45 @@
                 <h2>BITMEN六大核心功能</h2>
             </div>
             <div class="product-desc">
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商
-                系统，具有一键铺单、闪单、砸盘冷却、大单规避
-                等实用功能。
+                BITMEN是一套基于AI辅助，交易自动划线的数字货币做市系统，具有自动化交易、一键挂单、盘口规避等实用功能。
             </div>
         </div>
         <div class="features-right">
             <div class="features-right-row">
                 <div class="frr-item">
-                    <h3>功能1</h3>
-                    <p>该功能十分强大</p>
+                    <h3>行情预设</h3>
+                    <p>数百套经典K线方案，模拟各种走势，并可随时切换，方便快捷</p>
                 </div>
                 <div class="frr-item">
-                    <h3>功能2</h3>
-                    <p>该功能十分强大</p>
-                </div>
-            </div>
-            <div class="features-right-row">
-                <div class="frr-item">
-                    <h3>功能3</h3>
-                    <p>该功能十分强大</p>
-                </div>
-                <div class="frr-item">
-                    <h3>功能4</h3>
-                    <p>该功能十分强大</p>
+                    <h3>人工画线</h3>
+                    <p>满足专业需求，通过人工画线，走出需要的独立行情</p>
                 </div>
             </div>
             <div class="features-right-row">
                 <div class="frr-item">
-                    <h3>功能5</h3>
-                    <p>该功能十分强大</p>
+                    <h3>走势跟随</h3>
+                    <p>锚定目标币对，进行价格或走势的跟随，使用方便且安全可靠</p>
                 </div>
                 <div class="frr-item">
-                    <h3>功能6</h3>
-                    <p>该功能十分强大</p>
+                    <h3>辅助功能</h3>
+                    <p>内置自动闪单、大单规避、防套利等模式，灵活应对盘口走向</p>
+                </div>
+            </div>
+            <div class="features-right-row">
+                <div class="frr-item">
+                    <h3>实时预警</h3>
+                    <p>市场异动及时提醒，四大预警功能及时判断走向，自动采取应急措施</p>
+                </div>
+                <div class="frr-item">
+                    <h3>资产监控</h3>
+                    <p>实时盘口、交易及资产状况跟踪，配合每日资产报表，让您掌控乾坤</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!--受众客户-->
-<section id="client">
+<section id="client" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="container">
         <div class="bit-title title-white client-title">
             <h1>受众客户</h1>
@@ -217,34 +212,34 @@
                     <img src="./images/client_icon1.png" alt="">
                 </div>
                 <div class="cwi-title">做市商</div>
-                <div class="cwi-text">关于做市机构的一些描述，做好文字够两行</div>
+                <div class="cwi-text">协助您更好的为您的项目方服务</div>
             </div>
             <div class="client-wrap-item">
                 <div class="cwi-icon">
                     <img src="./images/client_icon2.png" alt="">
                 </div>
                 <div class="cwi-title">交易所</div>
-                <div class="cwi-text">关于做市机构的一些描述，做好文字够两行</div>
+                <div class="cwi-text">支持API接入，上币及做市服务一体化</div>
             </div>
             <div class="client-wrap-item">
                 <div class="cwi-icon">
                     <img src="./images/client_icon3.png" alt="">
                 </div>
                 <div class="cwi-title">项目方</div>
-                <div class="cwi-text">关于做市机构的一些描述，做好文字够两行</div>
+                <div class="cwi-text">自动化做市，降低项目做市成本</div>
             </div>
             <div class="client-wrap-item">
                 <div class="cwi-icon">
                     <img src="./images/client_icon4.png" alt="">
                 </div>
                 <div class="cwi-title">孵化机构</div>
-                <div class="cwi-text">关于做市机构的一些描述，做好文字够两行</div>
+                <div class="cwi-text">提高您的服务品质，彰显服务质量</div>
             </div>
         </div>
     </div>    
 </section>
 <!--功能展示-->
-<section id="show" class="show">
+<section id="show" class="show" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="container product-box show-box">
         <div class="product-left showone">
             <div class="showone-box1">
@@ -259,13 +254,10 @@
         <div class="product-right">
             <div class="bit-left-title features-title">
                 <h1>功能展示</h1>
-                <h2>自动撮合交易机器人</h2>
+                <h2>自动交易机器人</h2>
             </div>
             <div class="product-desc">
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
+                基于K线方案，实现7*24不间断做市，让市场具有良好的流动性，优良的盘口活跃度和买卖深度，并利用规避、预警、防套利等多种逻辑降低做市成本。
             </div>
             <div class="show-btn">
                 <a href="javascript:;">联系我们</a>
@@ -273,18 +265,15 @@
         </div>
     </div>
 </section>
-<section class="show">
+<section class="show" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="container product-box show-box">
         <div class="product-right">
             <div class="bit-left-title features-title">
                 <h1>功能展示</h1>
-                <h2>自动撮合交易机器人</h2>
+                <h2>自动跟随机器人</h2>
             </div>
             <div class="product-desc">
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
-                Bitmen是一套基于AI辅助交易画线的虚拟币做市商系统，
-                具有一键铺单、闪单、砸盘冷却、大单规避等实用功能。
+                提供流动性，复制各大交易所或目标币对的买卖深度和K线走势，为用户构建真实的交易环境，并利用智能机器人的策略降低做市成本。
             </div>
             <div class="show-btn">
                 <a href="javascript:;">联系我们</a>
@@ -303,7 +292,7 @@
     </div>
 </section>
 <!--服务宗旨-->
-<section id="purpose">
+<section id="purpose" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="bit-title purpose-title">
         <h1>服务宗旨</h1>
         <h2>我们的服务宗旨</h2>
@@ -350,7 +339,7 @@
     </div>
 </section>
 <!--footer-->
-<section id="footer">
+<section id="footer" data-scroll-reveal="enter bottom and move 50px over 1.33s">
     <div class="container">
         <div class="footer-box">
             <div class="footer-left">
@@ -380,7 +369,9 @@
     </div>
 </section>
 <script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/scrollReveal.js"></script>
 <script>
+    window.scrollReveal = new scrollReveal();
     $(function(){
         window.addEventListener('scroll', function(){
             let t = $('body, html').scrollTop();   // 目前监听的是整个body的滚动条距离
@@ -397,9 +388,13 @@
             console.log(navIndex);
             $("html, body").animate({
                 scrollTop: $('#'+navIndex).offset().top - 63}, {duration: 1000,easing: "swing"
-            });//scrollTop:指定相关模块回到指定位置（该位置要去掉菜单导航栏高度）。
-
+            });
         });
+        $("#linkUs").on("click",function(){
+            $("html, body").animate({
+                scrollTop: $('#footer').offset().top - 63}, {duration: 1000,easing: "swing"
+            });
+        })
 
 
     })
