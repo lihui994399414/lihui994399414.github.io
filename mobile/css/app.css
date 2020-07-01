@@ -651,15 +651,21 @@
     justify-content: space-between;
     align-items: center;
     align-self: center;
-    padding:0 0.24rem;
+    padding:0 0 0 0.24rem;
     position:relative;
 }
-.hb-icon{
-    width:0.4rem;
-}
+
 .hb-logo{
     width:2rem;
 }
-.hb-icon img,.hb-logo img{
+.hb-logo img{
     width:100%;
+}
+.hb-icon img{
+    width:0.4rem;
+}
+.hb-icon{
+    width: 50%;
+    text-align: right;
+    padding: 0.28rem 0.24rem;
 }
